@@ -20,8 +20,6 @@ const Form = () => {
   const notify = () => toast.success("Сообщение отправлено");
   const errorfy = () => toast.error("Произошла ошибка");
 
-  const ref = React.useRef(null);
-
   const validateField = (name: string, value: string) => {
     switch (name) {
       case "name":
